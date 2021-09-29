@@ -1,0 +1,51 @@
+header {
+
+    display: flex;
+    height: 25vh;
+    background-color: rgb(224, 99, 99);
+    width: auto;
+    padding-right: 5%;
+}
+
+
+ul.headerright {
+
+    height: 10vh;
+    align-items: flex-end;
+   
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+          
+}
+
+div.logo {
+
+    height: auto;
+    text-align: center;
+    margin: auto;    
+    width: auto;
+}
+
+img.logo {
+
+    height: 23vh;
+}
+
+
+li.headerright{
+    
+    list-style: none;
+    height: 100%;
+}
+    
+
+
+
+body {
+    margin: 0%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
