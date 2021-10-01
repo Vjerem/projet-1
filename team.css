@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EBEBEB;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.teamcards {
+    background-color: #FFFFFF;
+    width: 60vw;
+    aspect-ratio: 3/4;
+    margin: auto;
+    margin-top: 4vh;
+    padding: 2vh;
+    font-size: 2rem;
+    text-align: bottom center;
+    border-radius: 10px;
+}
+
+div img {
+    display: block;
+    margin: auto;
+    margin-top: 2vh;
+}
+
+img {
+    height: 27vh;
+    aspect-ratio: 1/1;
+    border-radius: 3px;
+}
+
+.teampres {
+    width: 85vw;
+    margin: auto;
+    margin-top: 2vh;
+    padding: 1vh;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #F76C6C;
+    font-size: 2rem;
+}
+
+p {
+    text-align: center;
+    color: #194350;
+    font-size: 1.5rem;
+}
+
+.teampres.p {
+    font-size: 0.5rem;
+}
+
+@media only screen and (min-width: 600px) { 
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EBEBEB;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.teamcards {
+    background-color: #FFFFFF;
+    width: 25vw;
+    aspect-ratio: 3/4;
+    margin-top: 8vh;
+    padding: 2vh;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+div img {
+    display: block;
+    margin: auto;
+    margin-top: 2vh;
+}
+
+img {
+    height: 35vh;
+    aspect-ratio: 1/1;
+    border-radius: 3px;
+}
+
+.teampres {
+    width: 85vw;
+    margin: auto;
+    margin-top: 8vh;
+    margin-bottom: 5vh;
+    padding: 3vh;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #F76C6C;
+    font-size: 2rem;
+}
+
+p {
+    text-align: center;
+    color: #194350;
+    font-size: 1.5rem;
+}
+
+.teampres.p {
+    font-size: 0.5rem;
+}
+
+}
