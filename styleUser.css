@@ -1,0 +1,54 @@
+body {
+    background-color: #EBEBEB;
+}
+
+section.user {
+    border:1px dotted black;
+    margin: auto; 
+    width: 80vw;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 50vw;
+}
+
+.circle {
+    width: 25vw;
+    height: 11vh;
+    border-radius: 80px;
+    background: #F76C6C;
+    position:fixed;
+}
+.picto {
+    padding-top: 2.2vh;
+    padding-left: 6.5vw;
+    position:fixed;
+}
+
+.frame {
+    margin: auto;
+    width: 80vw;
+    height: 30vh;
+    background: white;
+    border-radius: 20px;
+}
+
+.connexion {
+    padding-top: 10vh;
+    padding-left: 10vw;
+}
+
+.pass {
+    padding-top: 4vh;
+    padding-left: 10vw;
+}
+
+input.userName {
+   border-radius: 20px;
+   height: 7vw;
+}
+
+input.password {
+    border-radius: 20px;
+    height: 7vw;
+ }
