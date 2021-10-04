@@ -5,13 +5,13 @@
 }
 header {
     top:0;
-    display: flex;
     position: fixed;
-    height: 10vh;
+    height: 19vh;
     background-color: rgb(224, 99, 99);
-    width: 100vw;
-
-    
+    width: 100vw; 
+}
+div.headerTop{
+    display: flex;
 }
 div.burger{
     width: 20vw;
@@ -65,8 +65,6 @@ svg.crossIcon{
 
 }
 
-
-
 nav.headerright{
     display: flex;
     width: 20vw;;
@@ -91,7 +89,7 @@ div.logo {
 }
 
 div.logo img {
-    height: 10vh;
+    height: 7vh;
 }
 
 
@@ -100,6 +98,25 @@ nav.headerright ul li{
     height: 100%;
 }
     
+.searchbar {
+    display: block;
+    margin: auto;
+    color: #ACA6A6;
+    font-size: 10px;
+    background-color: #F9F4F4;
+    border-radius: 5px;
+    height: 4.5vh;
+    width: 60vw;
+    padding-left: 1vw;
+    
+}
+.baseline {
+    color:white;
+    font-size: 0.8rem;
+    padding: 1vh;
+    padding-top: 2.5vh;
+    text-align: center;
+}
 
 /*Main*/
 
@@ -113,26 +130,13 @@ main{
 }
 
 
-section.mainBackground{
+div.mainBackground{
     background-color: #EBEBEB;
     margin-top: 2vh;
 
 
 }
-.searchbar {
-    display: block;
-    margin: auto;
-    color: #ACA6A6;
-    font-size: 10px;
-    background-color: #F9F4F4;
-    border-radius: 5px;
-    height: 2vh;
-    width: 80vw;
-    padding: 2vh;
-    
 
-    /*margin: 0 1.5rem 0 1.5rem;*/
-}
 
 article.valeurs{
     display: block;
@@ -145,13 +149,7 @@ article.valeurs{
     
 }
 
-.baseline {
-    color: #194350;
-    font-size: 0.7rem;
-    padding: 1vh;
-    /*font-weight:lighter; or decrease font-size???*/
-    text-align: center;
-}
+
 
 .catchphrase {
     color: #194350;
@@ -192,13 +190,27 @@ article.meilleuresVentes{
     margin-top: 10vh;
 }
 
+
+div.slider{
+    display: flex;
+    overflow: hidden;
+    background-color: #EBEBEB;
+    margin: 0 12.5vw;
+
+}
+img.slide{
+    margin:2.5vw;
+    width: 20vw;
+    border-radius: 5px;
+}
+
 /*Footer*/
 
 footer {
 
     background-color: #39424E;
     width: 100vw;
-    height: 10vh;
+    height: 15vh;
     display: flex;
     justify-content: space-between;
 
@@ -208,11 +220,15 @@ footer ul {
     list-style: none;
 
 }
+footer ul li {
+    padding-bottom: 1vh;
+}
 
 footer li a {
     text-decoration: none;
     color: white;
-    font-size: 0.7rem; 
+    font-size: 0.9rem; 
+    
     line-height: 1.2rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -223,7 +239,7 @@ footer li a:hover {
 
 .list {
     width: 50vw;
-    padding-top: 0.5vh;
+    padding-top: 1vh;
     margin-left: 6vw;
 }
  
@@ -245,74 +261,99 @@ footer li a:hover {
     color:white;
     margin-bottom: 0.5vh;
 }
-div.list li{
-    height: 2vh;
-}
 
 .pictosocialnet {
-    height: 18px;
+    height: 40px;
     width: auto;
-    padding: 0.1vh 0.5vw;
+    padding: 0.5vh 0.5vw;
 }
 
 .containernetworks p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 
 
 
 @media only screen and (min-width: 600px) {
+    header{
+        height: 13vh;
+    }
+    main{
+        margin-top:13vh;
+    }
     div.logo {
         position: absolute;
-        left:0;
-        padding-left: 5vw;
+        top:0;
+        height: 19vh;
+        padding-left: 2vw;
+        z-index: 10;   
+    }
+
+    div.logo img {
         align-self: center;
+        height: 9vh;
+    }
+    div.logo a {
+        display: flex;
+        height: 10vh;
+        line-height: 10vh;
+        
     }
     div.burger{
         display: none;
     }
-    nav.headerright  {
-        display: flex;
-        justify-content: flex-end;
-        width: 100vw;
-        padding-right: 5vw;
-        
+
+  
+    nav.headerright{
+        position:absolute;
+        top:0;
+        right: 0;
+        height: 10vh;
+        width: 10vw;
+        padding-right: 2vw;
+        margin-left: 80vw;;
+      
+
     }
     nav.headerright ul {
         display: flex;
-        justify-content: space-between;
-        width: 10vw;
         padding-right: 2vw;
+        justify-self: flex-end;
     }
+    div.headerBottom{
+        margin-top: 10vh;   
+    }
+    
     div.menuBurger{
         display: flex;
         background: none;
-        justify-content: center;
-        margin: auto;
-        position: absolute;
-        top:0;
+        width: 60vw;
         height: 10vh;
-        width: 100vw;
-        
+        z-index: 1;
+        margin-left: 15vw;
     }
+    
     .crossIcon{
         display:none;
     }
-    
+
+    div.menuBurger ul{
+        display: flex;;
+    }
     div.categories{
         position: absolute;
         position: fixed;
         top:0;
         display:flex;
         align-items: center;
-        font-size: 1.2rem;
+        font-size: 1rem;
         width: 60vw;
-        height: 10vh;
+        height: 9vh;
         padding: 0;
-        margin: 0;
+        
         border: 0;
     }
     div.categories li{
@@ -321,6 +362,21 @@ div.list li{
     }
     div.categories li a{
         color:white;
+        font-weight: bold;
+    }
+    div.categories li a:hover {
+        color:#39424E;
+    }
+    
+
+    .searchbar {
+        width: 20vw;
+        position: absolute;
+        right: 15vw;
+        top: 3vh;
+    }
+    .baseline{
+        padding: 0;
     }
 
     article.valeurs p{
@@ -340,23 +396,29 @@ div.list li{
         padding-right: 2vw;
     }
 
-
     .pictosocialnet {
-        height: 3vh;
+        height: 5vh;
         padding: 0.1vh 0.5vw;
     }
-    div.socialnetworks{
-        height: 9vh;
+    .containernetworks{
+        height: 15vh;
+        width: 50vh;
+        margin:0;
+        margin-left: 2vw;
+        justify-content: center;
     }
+
     .containernetworks p {
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-weight: bold;
-        font-size: 0.85rem;
+        font-size: 1rem;
+        
     }
     div.lines{
         display: flex;
+        justify-content: center;
         align-items: center; 
-        height: 5vh;
+        height: 12vh;
         padding-top: 1vh ;
 
     }
