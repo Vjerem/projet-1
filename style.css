@@ -213,6 +213,8 @@ footer {
     height: 15vh;
     display: flex;
     justify-content: space-between;
+    position: absolute;
+    bottom:0;
 
 }
 
@@ -277,7 +279,7 @@ footer li a:hover {
 
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
     header{
         height: 13vh;
     }

@@ -11,10 +11,11 @@ crossIcon.addEventListener("click",function(){
 
 let slider = document.querySelector(".slider");
 let slides = document.querySelectorAll(".slide");
-//interval
+
 let interval = window.setInterval(slide,1000);
 //slide
 function slide(){
+    
     let imgSize = slides[0].width;
     slider.style.transform = 'translateX($imgSize + "px")';
     slider.appendChild(slides[0]);
