@@ -3,7 +3,6 @@ body {
 }
 
 section.user {
-    border:1px dotted black;
     margin: auto; 
     width: 80vw;
     height: 6vh;
@@ -16,21 +15,22 @@ section.user {
     width: 25vw;
     height: 11vh;
     border-radius: 80px;
-    background: #F76C6C;
-    position:fixed;
-}
-.picto {
+    background: #F76C6C; 
+}  
+
+.pictoUser {
     padding-top: 2.2vh;
     padding-left: 6.5vw;
-    position:fixed;
 }
 
-.frame {
+section.frame {
     margin: auto;
     width: 80vw;
-    height: 30vh;
+    height: 36vh;
     background: white;
     border-radius: 20px;
+    margin-bottom: 25vh;
+    margin-top: 6vh ;
 }
 
 .connexion {
@@ -46,9 +46,187 @@ section.user {
 input.userName {
    border-radius: 20px;
    height: 7vw;
+   border:none;
+   background-color: #EBEBEB;
+   padding-left:2vh;
+
 }
 
 input.password {
     border-radius: 20px;
     height: 7vw;
+    border:none;
+    background-color: #EBEBEB;
+    padding-left:2vh;
  }
+
+ button {
+     margin-left: 30vw;
+     margin-top: 4vh;
+ }
+
+ #myBtn {
+    width: 20vw;
+    height: 3vh;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    background-color: #194350;
+    font-weight: bolder;
+ }
+
+ #myBtn:hover {
+    background-color:#F76C6C;
+ }
+ 
+ .modal {
+    display: none; 
+    position: fixed; 
+    padding-top: 30vh;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100vw; 
+    height: 100vh; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0, 0, 0, 0.164); 
+  }
+
+  .modal-content {
+    background-color: white;
+    border-radius: 20px;
+    margin: auto;
+    padding: 20px;
+    width: 50vw;
+    height: 7vh;
+  }
+  
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #F76C6C;
+    text-decoration: none;
+  }
+
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-bottom: 1vh;
+    font-size: 0.9rem;
+    color: darkslategray;
+}
+
+
+@media only screen and (min-width: 600px) {
+    section.user {
+        margin: auto; 
+        width: 10vw;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        padding-top: 10vw;
+    }
+    
+    section.frame {
+        margin: auto;
+        width: 30vw;
+        height: 50vh;
+        background: white;
+        border-radius: 20px;
+        margin-bottom: 11.9vh;
+        margin-top: 8vh;
+    }
+
+
+    .circle {
+        width: 8vw;
+        height: 16vh;
+        border-radius: 80px;
+        background: #F76C6C;
+    }
+
+    .pictoUser {
+        padding-left: 2vw;
+        padding-top: 3vh;
+        box-sizing: content-box;
+        width: 50%;
+
+    }
+
+
+    input.userName {
+        width: 24vw;
+        border-radius: 20px;
+        height: 2vw;
+        font-size: 1rem;
+        border:none;
+        background-color: #EBEBEB;
+        padding-left:1vh;
+     }
+     
+    input.password {
+         width: 24vw;
+         border-radius: 20px;
+         height: 2vw;
+         font-size: 1rem;
+         border:none;
+         background-color: #EBEBEB;
+         padding-left:1vh;
+      }
+
+    .connexion {
+        padding-top: 13vh;
+        padding-left: 2.7vw;
+    }
+
+    .pass {
+        padding-top: 6vh;
+        padding-left: 2.7vw;
+    }
+
+    #myBtn {
+        width: 4.5vw;
+        height: 3vh;
+        border-radius: 10px;
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-decoration: none;
+        border: none;
+        color: white;
+        text-transform: uppercase;
+        background-color: #194350;
+        font-weight: bolder;
+     }
+
+     button {
+        margin-left: 13vw;
+        margin-top: 6vh;
+    }
+
+    p {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding-bottom: 7px;
+        color: darkslategray;
+    }
+
+    .modal-content {
+        background-color: white;
+        border-radius: 20px;
+        margin: auto;
+        padding: 20px;
+        width: 20vw;
+        height: 8vh;
+      }
+    
+
+}
