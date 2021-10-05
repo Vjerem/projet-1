@@ -3,6 +3,7 @@
     box-sizing : border-box;
     max-width:100%
 }
+
 header {
     top:0;
     position: fixed;
@@ -13,6 +14,7 @@ header {
 div.headerTop{
     display: flex;
 }
+
 div.burger{
     width: 20vw;
     padding: 2vh;
