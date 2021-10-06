@@ -156,9 +156,10 @@ article.valeurs, article.meilleuresVentes{
 
 h1{
     color: #F76C6C;
-    font-size: 2rem !important;
+    font-size: 1.6rem; 
+    font-weight: bold;
     text-align: center; 
-    padding: 2vh 0 !important;
+    padding: 2vh 0; 
 
 }
 
@@ -167,6 +168,8 @@ article.meilleuresVentes h2, article.valeurs h2{
     font-size: 20px;
     text-align: center; 
     padding-top: 1rem;
+    font-weight: bold;
+
 }
 
 article.valeurs p {
