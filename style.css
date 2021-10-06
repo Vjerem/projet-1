@@ -147,8 +147,6 @@ article.valeurs, article.meilleuresVentes{
     
 }
 
-
-
 .catchphrase {
     color: #194350;
     font-size: 15px;
@@ -156,7 +154,15 @@ article.valeurs, article.meilleuresVentes{
     padding: 2vh;
 }
 
-h2{
+h1{
+    color: #F76C6C;
+    font-size: 2rem !important;
+    text-align: center; 
+    padding: 2vh 0 !important;
+
+}
+
+article.meilleuresVentes h2, article.valeurs h2{
     color: #F76C6C;
     font-size: 20px;
     text-align: center; 
@@ -230,7 +236,6 @@ footer li a {
     font-size: 0.9rem; 
     
     line-height: 1.2rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 footer li a:hover {
