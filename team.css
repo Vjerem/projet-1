@@ -1,37 +1,36 @@
 *{
     box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 body {
     background-color: #EBEBEB;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.teamcards {
+article.teamcards {
     background-color: #FFFFFF;
     width: 60vw;
     aspect-ratio: 3/4;
     margin: auto;
     margin-top: 4vh;
     padding: 2vh;
-    font-size: 2rem;
-    text-align: bottom center;
+    font-size: 1.5rem;
+    text-align: center;
     border-radius: 10px;
 }
 
-div img {
+article.teamcards div img {
     display: block;
     margin: auto;
     margin-top: 2vh;
-}
-
-img {
-    height: 27vh;
+    margin-bottom: 2vh;
+    height: 25vh;
     aspect-ratio: 1/1;
     border-radius: 3px;
 }
 
-.teampres {
+section.teampres {
     width: 85vw;
     margin: auto;
     margin-top: 2vh;
@@ -41,61 +40,54 @@ img {
     border-radius: 10px;
 }
 
-h2 {
+section.teampres h2 {
     color: #F76C6C;
     font-size: 2rem;
 }
 
-p {
+section.teampres p {
     text-align: center;
     color: #194350;
-    font-size: 1.5rem;
-}
-
-.teampres.p {
-    font-size: 0.5rem;
+    font-size: 1.25rem;
+    padding: 3vh;
 }
 
 @media only screen and (min-width: 600px) { 
 
-*{
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #EBEBEB;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.flexbox {
+section.flexbox {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 40px 0;
 }
 
-.teamcards {
+article.teamcards {
     background-color: #FFFFFF;
     width: 25vw;
     aspect-ratio: 3/4;
     margin-top: 8vh;
+    margin-right: 2vw;
+    margin-left: 2vw;
     padding: 2vh;
     font-size: 2rem;
     text-align: center;
     border-radius: 10px;
 }
 
-div img {
+article.teamcards div img {
     display: block;
     margin: auto;
     margin-top: 2vh;
+    margin-bottom: 4vh;
 }
 
-img {
+article.teamcards img {
     height: 35vh;
     aspect-ratio: 1/1;
     border-radius: 3px;
 }
 
-.teampres {
+section.teampres {
     width: 85vw;
     margin: auto;
     margin-top: 8vh;
@@ -106,19 +98,15 @@ img {
     border-radius: 10px;
 }
 
-h2 {
+section.teampres h2 {
     color: #F76C6C;
     font-size: 2rem;
 }
 
-p {
+section.teampres p {
     text-align: center;
     color: #194350;
     font-size: 1.5rem;
+    padding: 2vh;
 }
-
-.teampres.p {
-    font-size: 0.5rem;
-}
-
 }

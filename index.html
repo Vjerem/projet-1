@@ -2,59 +2,113 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WILD CODE SHOP</title>
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>Burger</nav>
-          <ul>
-            <li><a href="#">Vêtements</a></li>
-            <li><a href="#">Fournitures</a></li>
-            <li><a href="#">Divers</a></li>
-            <li><a href="#">High-Tech</a></li>
-          </ul>
-         
-          
-            <a> <img src="images/logoshop.png" alt="Wild" href="index.html"></a> <!-- renvoie vers la page d'acceuil -->
-          
-        <nav>
-            <ul>
-                <li><a href="#"> Connexion</a></li>
-                <li><a href="#"> Panier </a></li>
-            </ul>         <!-- flexbox aligné ?  -->
-    </header>
-
-
-        <section>
-            <p class="catchphrase"> Les goodies que tous les Wilders s'arrachent !!!</p>
-            <input class="searchbar" type="search" placeholder="Search">
-        </section>
-
-        <div>
-            <section>
- 
-                <h1 class="bigCatchphrase">I came, I saw, I've WILD !</h1>
-                    <article class="valeursCadre">
-                        <h2 class="welcomeTitles">Nos Valeurs</h2>
-                        <p class="valeursPara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima dolore fugiat officiis est ea quasi rerum, tempora iusto harum labore voluptatum maxime pariatur reprehenderit molestias deleniti nemo sed amet voluptate!</p>
-                        <a class="linkButton" href="https://www.wildcodeschool.com/">Lien vers le site de l'école</a>
-                    </article>
     
-                    <article>
-                        <h2>Meilleurs ventes</h2>
-                        <img scr= "" alt="">
-                 <!-- slide de quelques produits  -->
-                    </article>
-            </section> 
-        </div>       
-        </section>
-    <footer>
-          <a href="#">Qui sommes-nous?</a>
-          <a href="#">Contacts</a>
-          <a href="#">FAQ</a>
-          <a href="#">Conditions générales de ventes</a>
-          <a href="#">Livraisons et retours</a>
-    </footer>
+        
+    <div class="menuBurger">
+        <svg class="crossIcon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+            <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+            <g><path d="M632.8,499.6l329.1,329.1c37.5,37.5,37.5,95.3,0,132.8c-17.3,17.3-43.3,28.9-66.4,28.9c-23.1,0-49.1-11.5-66.4-28.9L500,632.4L170.9,961.5c-17.3,17.3-43.3,28.9-66.4,28.9c-23.1,0-49.1-11.5-66.4-28.9c-37.5-37.5-37.5-95.3,0-132.8l329.1-329.1L38.1,170.6C0.6,133,0.6,75.3,38.1,37.8c37.5-37.5,95.3-37.5,132.8,0L500,366.9L829.1,37.8c37.5-37.5,95.3-37.5,132.8,0c37.5,37.5,37.5,95.3,0,132.8L632.8,499.6L632.8,499.6z"/></g>
+        </svg>
+        <div class="categories">
+            <li><a href="Vétements.html">Vêtements</a></li>
+            <li><a href="Fournitures.html">Fournitures</a></li>
+            <li><a href="Divers.html">Divers</a></li>
+            <li><a href="High-tech.html">High-tech</a></li>
+        </div>
+    </div>
+    
+
+    <div class="noBurger">
+
+        <header>
+            <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>  
+            </div> 
+            <div class="logo">
+                <img src="images/logoshop.png" alt="Wild" href="index.html"></a> <!-- renvoie vers la page d'acceuil -->
+            </div>
+            
+            <nav class="headerright">
+                <ul>
+                    <li><a  alt="connexion utilisateur" href="#"><img src="images/usericon.png" alt=""></a></li>
+                    <li><a  alt="panier" href="#"><img src="images/bagIcon.png"></a></li>
+                </ul>  
+            </nav>
+                
+                    <!-- flexbox aligné ?  -->
+        </header>
+
+        <main>
+            <section>
+                <p class="baseline"> Les goodies que tous les Wilders s'arrachent !!!</p>
+                <input class="searchbar" type="search" placeholder="Search">
+            </section>
+
+            
+            <section class="mainBackground">
+
+                <p class="catchphrase">I came, I saw, I've WILD !</p>
+                <article class="valeurs">
+                    <h2>Nos Valeurs</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima dolore fugiat officiis est ea quasi rerum, tempora iusto harum labore voluptatum maxime pariatur reprehenderit molestias deleniti nemo sed amet voluptate!  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, necessitatibus beatae aspernatur eligendi accusamus explicabo fugiat ab velit id nostrum aliquam earum, eius quo in dignissimos inventore, ullam veniam quam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque explicabo quisquam porro possimus officiis eos sunt tempora labore laboriosam aperiam nam rerum aliquid maiores amet, voluptatum odio blanditiis soluta molestias!</p>
+                    <button>
+                        <a href="https://www.wildcodeschool.com/" target="_blank">Lien vers le site de l'école</a>
+                    </button>
+                </article>
+
+                <article class="meilleuresVentes">
+                    <h2>Meilleurs ventes</h2>
+                    <img scr= "" alt="">
+                <!-- slide de quelques produits  -->
+                </article>
+            </section>
+        </main>
+             
+                
+            
+        <footer>
+
+            <div class = "list">
+                <ul>
+                    <li><a href="quisommesnous.html">Qui sommes-nous?</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="cgv.html">CGV</a></li>
+                </ul>
+            </div>
+            
+
+            <div class="containernetworks">
+                <div class = "socialnetworks">
+                    <p>Nos réseaux favoris !</p>
+                        <div class="lines">
+                           <div class ="line1">
+                            <a href="https://fr-fr.facebook.com/WildCodeSchool" target="_blank"><img class = "pictosocialnet" src="images/facebook.png" alt="Rejoins-nous sur Facebook"></a>
+                            <a href ="https://twitter.com/wildcodeschool" target="_blank"><img class = "pictosocialnet" src="images/twitter.png" alt="Rejoins-nous sur Twitter"></a>
+                            <a href ="https://www.linkedin.com/school/wild-code-school/" target="_blank"><img class = "pictosocialnet" src="images/linkedin.png" alt="Rejoins-nous sur Linkedin"></a>
+                        </div>
+                        <div class ="line2">
+                            <a href="https://www.youtube.com/channel/UCi99G_0QPx5sYsK8zdvQzfw" target="_blank"><img class = "pictosocialnet" src="images/youtube.png" alt="Rejoins-nous sur Youtube"></a>
+                            <a href="https://github.com/WildCodeSchool" target="_blank"><img class = "pictosocialnet" src="images/github.png" alt="Rejoins-nous sur Github"></a>
+                            <a href= "https://www.instagram.com/wildcodeschoolofficial/?hl=en" target="_blank"><img class = "pictosocialnet" src="images/instagram.png" alt="Rejoins-nous sur Instagram"></a>
+                        </div> 
+                        </div>
+                        
+                </div>
+            </div>     
+
+
+        </footer>
+    </div>
+     
+    <script type="text/javascript" src="script.js" ></script>
 </body>
 </html>
