@@ -27,7 +27,7 @@
         </div>
     </div>
     
-    < class="noBurger">
+    <div class="noBurger">
 
         <header>
             <div class="headerTop">
@@ -63,27 +63,26 @@
     </div>
 </div>
 
-<div class = "frame">
-    <div class = "connexion">
-        <p>Identifiant de Wilder:</p>
-        <form>
-            <input type = "text" class="userName" placeholder="E-mail"/>
-        </form>
-    </div>
-    <div class = "pass">
-        <p>Mot de passe:</p>
-        <form>
-            <input type = "text" class="password" placeholder="Mot de passe"/>
-        </form>
-    </div>
-        <button id="myBtn">Log In</button>
-    <div id="myModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Salut !</p>
+    <form>
+        <div class="connexion">
+                <label for="userName" class="user">Identifiant de Wilder:</label>
+                <input type="text" name="username" class="userName" placeholder="Identifiant de Wilder">
+            
+        
+                <label for="pass" class="password">Mot de passe:</label>
+                <input type="password" name="password" class="pass" placeholder="Ton mot de passe">
+
+                <input type ="submit" id="myBtn" value = "Connexion"></input>
+            
+             <div id="myModal" class="modal">
+                 <div class="modalContent">
+                     <span class="close">&times;</span>
+                    <p>Salut Wilder !</p>
+                </div>
+            </div>    
         </div>
-    </div>
-</div>
+    </form>
+
 
 <footer>
 
@@ -115,13 +114,10 @@
                 
         </div>
     </div>     
-
-
-</footer>
-</div>
-      
-    <script type="text/javascript" src="script.js"></script>
-    <script type="text/javascript" src="userscript.js"></script>
+    </footer>
+</div>  
+    <script src="script.js"></script>
+    <script src="userscript.js"></script>
     
 </body>
 </html>
