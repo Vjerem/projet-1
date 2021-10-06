@@ -6,74 +6,86 @@
   <title>WILD CODE SHOP</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
 </head>
-<body>
-    
-        
+<body>      
     <div class="menuBurger">
         <svg class="crossIcon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
             <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
             <g><path d="M632.8,499.6l329.1,329.1c37.5,37.5,37.5,95.3,0,132.8c-17.3,17.3-43.3,28.9-66.4,28.9c-23.1,0-49.1-11.5-66.4-28.9L500,632.4L170.9,961.5c-17.3,17.3-43.3,28.9-66.4,28.9c-23.1,0-49.1-11.5-66.4-28.9c-37.5-37.5-37.5-95.3,0-132.8l329.1-329.1L38.1,170.6C0.6,133,0.6,75.3,38.1,37.8c37.5-37.5,95.3-37.5,132.8,0L500,366.9L829.1,37.8c37.5-37.5,95.3-37.5,132.8,0c37.5,37.5,37.5,95.3,0,132.8L632.8,499.6L632.8,499.6z"/></g>
         </svg>
         <div class="categories">
-            <li><a href="Vétements.html">Vêtements</a></li>
-            <li><a href="Fournitures.html">Fournitures</a></li>
-            <li><a href="Divers.html">Divers</a></li>
-            <li><a href="High-tech.html">High-tech</a></li>
+            <ul>
+                <li><a href="vêtements.html">Vêtements</a></li>
+                <li><a href="Fournitures.html">Fournitures</a></li>
+                <li><a href="Divers.html">Divers</a></li>
+                <li><a href="High-tech.html">High-tech</a></li>
+            </ul>
+            
         </div>
     </div>
     
-
     <div class="noBurger">
 
         <header>
-            <div class="burger">
-                <div></div>
-                <div></div>
-                <div></div>  
-            </div> 
-            <div class="logo">
-                <img src="images/logoshop.png" alt="Wild" href="index.html"></a> <!-- renvoie vers la page d'acceuil -->
+            <div class="headerTop">
+                <div class="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>  
+                </div> 
+                <div class="logo">
+                    <a href="index.html"><img src="images/logoshop.png" alt="Wild" ></a> <!-- renvoie vers la page d'acceuil -->
+                </div>
+                
+                <nav class="headerright">
+                    <ul>
+                        <li><a href=""><img src="images/usericon.png" alt="User icon"></a></li>
+                        <li><a href=""><img src="images/bagIcon.png" alt="Bag icon"></a></li>
+                    </ul>  
+                </nav>  
             </div>
             
-            <nav class="headerright">
-                <ul>
-                    <li><a  alt="connexion utilisateur" href="#"><img src="images/usericon.png" alt=""></a></li>
-                    <li><a  alt="panier" href="#"><img src="images/bagIcon.png"></a></li>
-                </ul>  
-            </nav>
+        
+
+            <div class="headerBottom">
+                <input class="searchbar" type="search" placeholder="Search">
+                <p class="baseline"> Les goodies que tous les Wilders s'arrachent !!!</p>
                 
-                    <!-- flexbox aligné ?  -->
+            </div>
         </header>
 
         <main>
-            <section>
-                <p class="baseline"> Les goodies que tous les Wilders s'arrachent !!!</p>
-                <input class="searchbar" type="search" placeholder="Search">
-            </section>
+            <p class="catchphrase">I came, I saw, I've WILD !</p>
+            <article class="valeurs">
+                <h2>Nos Valeurs</h2>
+                <p>Nous avons pour but de réunir et consolider les liens de toute la communauté des Wilders grace à ce WildShop.
+                    Car au fond, la Wild c'est bien plus qu'une simple formation. C'est une expérience humaine riche en échanges, en rencontres. La communauté Wild rassemble des personnes qui regardent et travaillent ensemble dans un seul et même but.
+                    
+                    Ce shop permettra aux anciens comme aux nouveaux Wilders d'avoir un souvenir de leur passage à la WILD, de développer un réseau afin que chacun, quelque soit son campus,  puisse rencontrer des personnes faisant partie de la communauté des Wilders. Petit par la taille mais grand par le Code ( ou coeur ).</p>
+                <div>
+                    <a href="https://www.wildcodeschool.com/" target="_blank">Lien vers le site de l'école</a>
+                </div>
+            </article>
 
+            <article class="meilleuresVentes">
+                <h2>Meilleurs ventes</h2>
+
+                <div class="slider">
+                    <img class="slide" src="images/goodies/vetements/Socks.png" alt="bouteille">
+                    <img class="slide" src="images/goodies/vetements/Boxer.png" alt="bouteille">
+                    <img class="slide" src="images/goodies/divers/Hache.png" alt="bouteille">
+                    <img class="slide" src="images/goodies/fournitures/Notebook.png" alt="bouteille">
+                    <img class="slide" src="images/goodies/i-tech/Gourd.png" alt="bouteille">
+                    <img class="slide" src="images/goodies/fournitures/Pencil.png" alt="bouteille">
+                    <img class="slide" src="images/goodies/divers/Mask.png" alt="bouteille">
+                    
+                </div>
             
-            <section class="mainBackground">
+            </article>
 
-                <p class="catchphrase">I came, I saw, I've WILD !</p>
-                <article class="valeurs">
-                    <h2>Nos Valeurs</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima dolore fugiat officiis est ea quasi rerum, tempora iusto harum labore voluptatum maxime pariatur reprehenderit molestias deleniti nemo sed amet voluptate!  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, necessitatibus beatae aspernatur eligendi accusamus explicabo fugiat ab velit id nostrum aliquam earum, eius quo in dignissimos inventore, ullam veniam quam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque explicabo quisquam porro possimus officiis eos sunt tempora labore laboriosam aperiam nam rerum aliquid maiores amet, voluptatum odio blanditiis soluta molestias!</p>
-                    <button>
-                        <a href="https://www.wildcodeschool.com/" target="_blank">Lien vers le site de l'école</a>
-                    </button>
-                </article>
-
-                <article class="meilleuresVentes">
-                    <h2>Meilleurs ventes</h2>
-                    <img scr= "" alt="">
-                <!-- slide de quelques produits  -->
-                </article>
-            </section>
         </main>
-             
-                
-            
+
         <footer>
 
             <div class = "list">
@@ -89,18 +101,18 @@
             <div class="containernetworks">
                 <div class = "socialnetworks">
                     <p>Nos réseaux favoris !</p>
-                        <div class="lines">
-                           <div class ="line1">
-                            <a href="https://fr-fr.facebook.com/WildCodeSchool" target="_blank"><img class = "pictosocialnet" src="images/facebook.png" alt="Rejoins-nous sur Facebook"></a>
-                            <a href ="https://twitter.com/wildcodeschool" target="_blank"><img class = "pictosocialnet" src="images/twitter.png" alt="Rejoins-nous sur Twitter"></a>
-                            <a href ="https://www.linkedin.com/school/wild-code-school/" target="_blank"><img class = "pictosocialnet" src="images/linkedin.png" alt="Rejoins-nous sur Linkedin"></a>
-                        </div>
-                        <div class ="line2">
-                            <a href="https://www.youtube.com/channel/UCi99G_0QPx5sYsK8zdvQzfw" target="_blank"><img class = "pictosocialnet" src="images/youtube.png" alt="Rejoins-nous sur Youtube"></a>
-                            <a href="https://github.com/WildCodeSchool" target="_blank"><img class = "pictosocialnet" src="images/github.png" alt="Rejoins-nous sur Github"></a>
-                            <a href= "https://www.instagram.com/wildcodeschoolofficial/?hl=en" target="_blank"><img class = "pictosocialnet" src="images/instagram.png" alt="Rejoins-nous sur Instagram"></a>
-                        </div> 
-                        </div>
+                    <div class="lines">
+                        <div class ="line1">
+                        <a href="https://fr-fr.facebook.com/WildCodeSchool" target="_blank"><img class = "pictosocialnet" src="images/facebook.png" alt="Rejoins-nous sur Facebook"></a>
+                        <a href ="https://twitter.com/wildcodeschool" target="_blank"><img class = "pictosocialnet" src="images/twitter.png" alt="Rejoins-nous sur Twitter"></a>
+                        <a href ="https://www.linkedin.com/school/wild-code-school/" target="_blank"><img class = "pictosocialnet" src="images/linkedin.png" alt="Rejoins-nous sur Linkedin"></a>
+                    </div>
+                    <div class ="line2">
+                        <a href="https://www.youtube.com/channel/UCi99G_0QPx5sYsK8zdvQzfw" target="_blank"><img class = "pictosocialnet" src="images/youtube.png" alt="Rejoins-nous sur Youtube"></a>
+                        <a href="https://github.com/WildCodeSchool" target="_blank"><img class = "pictosocialnet" src="images/github.png" alt="Rejoins-nous sur Github"></a>
+                        <a href= "https://www.instagram.com/wildcodeschoolofficial/?hl=en" target="_blank"><img class = "pictosocialnet" src="images/instagram.png" alt="Rejoins-nous sur Instagram"></a>
+                    </div> 
+                    </div>
                         
                 </div>
             </div>     
@@ -109,6 +121,6 @@
         </footer>
     </div>
      
-    <script type="text/javascript" src="script.js" ></script>
+    <script src="script.js" ></script>
 </body>
 </html>
