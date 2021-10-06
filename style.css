@@ -3,7 +3,11 @@
     box-sizing : border-box;
     max-width:100%
 }
-
+body {
+    min-height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
+}
 header {
     top:0;
     position: fixed;
@@ -33,6 +37,8 @@ div.menuBurger{
 }
 div.noBurger{
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 div.burger div{
     height: 5px;
@@ -122,32 +128,22 @@ nav.headerright ul li{
 
 /*Main*/
 
-body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
-}
+
 
 main{
-    margin-top: 11vh;
-    width: 100vw;;
-}
-
-
-div.mainBackground{
+    margin-top: 19vh;
+    width: 100vw;
     background-color: #EBEBEB;
-    margin-top: 2vh;
-
-
 }
 
 
-article.valeurs{
+article.valeurs, article.meilleuresVentes{
     display: block;
     margin: auto;
     background-color: #ffffff ;
     width: 80vw;
     border-radius: 10px;
     text-align: center;
-    margin-top: 5vh;
     
 }
 
@@ -160,7 +156,7 @@ article.valeurs{
     padding: 2vh;
 }
 
-article.valeurs h2{
+h2{
     color: #F76C6C;
     font-size: 20px;
     text-align: center; 
@@ -169,17 +165,18 @@ article.valeurs h2{
 
 article.valeurs p {
    color: #000000;
-   font-size: 1rem;
-   padding: 1rem 2rem 1rem 2rem;
+   font-size: 1.2rem;
+   letter-spacing: normal;
+   padding: 2vh 4vw;
    text-align: inherit;
 }
-
-article.valeurs button a {
-    text-decoration: none;
-    color: #FFFFFF;
+article.valeurs div{
+    padding: 3vh 0; 
 }
 
-article.valeurs button{
+article.valeurs a {
+    text-decoration: none;
+    color: #FFFFFF;
     background-color: #39424E;
     padding: 1vh;
     border-radius: 10px;
@@ -188,8 +185,7 @@ article.valeurs button{
 }
 
 article.meilleuresVentes{
-    height: 30vh;
-    margin-top: 10vh;
+    margin: 10vh auto;
 }
 
 
@@ -197,12 +193,14 @@ div.slider{
     display: flex;
     overflow: hidden;
     background-color: #EBEBEB;
-    margin: 0 12.5vw;
+    margin: 2vh 12.5vw;
+    
 
 }
 img.slide{
     margin:2.5vw;
     width: 20vw;
+    height: auto;
     border-radius: 5px;
 }
 
@@ -212,11 +210,9 @@ footer {
 
     background-color: #39424E;
     width: 100vw;
-    height: 15vh;
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    bottom:0;
+
 
 }
 
@@ -273,7 +269,6 @@ footer li a:hover {
 }
 
 .containernetworks p {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     font-size: 0.8rem;
 }
@@ -334,7 +329,7 @@ footer li a:hover {
     div.menuBurger{
         display: flex;
         background: none;
-        width: 60vw;
+        width: 50vw;
         height: 10vh;
         z-index: 1;
         margin-left: 15vw;
@@ -354,7 +349,7 @@ footer li a:hover {
         display:flex;
         align-items: center;
         font-size: 1rem;
-        width: 60vw;
+        width: 50vw;
         height: 9vh;
         padding: 0;
         
@@ -413,7 +408,6 @@ footer li a:hover {
     }
 
     .containernetworks p {
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-weight: bold;
         font-size: 1rem;
         
@@ -426,144 +420,6 @@ footer li a:hover {
         padding-top: 1vh ;
 
     }
-    .nosection{
-        display: flex;
-        justify-content: space-between;
-        margin-left: 3vw;
-        margin-top: 2vh;
-        height: 55vh;
-        width: 40vh ;
-    }
-    aside.siandqt div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 30vh;
-        width: 9vw;
-    }
-    aside.siandqt{
-        display: flex;
-        flex-wrap: wrap;
-        width: 35vw;
-    }
-    section.section {
-        margin-left: 3vw;
-    }
-    .action-button {
-        padding: 10px 40px;
-        float: left;
-        margin: auto;
-        border-radius: 10px;
-        font-family: 'Pacifico', cursive;
-        font-size: 25px;
-        color: #ffffff;
-        text-decoration: none;
-        background-color:#F76C6C;
-        border-bottom: 5px solid #F76C6C;;
-        text-shadow: 0px -2px #F76C6C;;
-        transition: all 0.1s;
-        -webkit-transition: all 0.1s;
-    }
-    .action-button:active {
-        transform: translate(0px,5px);
-        -webkit-transform: translate(0px,5px);
-        border-bottom: 1px solid;
-    }
-    .imgs{
-        max-width: 80%;
-    }
-    .clothesize{
-        max-width: 5vh;
-        max-height: 5vh;
-        padding: 2px 5px;
-        
-
-    }
-    aside.siandqt p{
-        display: flex;
-        align-items: center;
-        padding-left: 1.5vw;
-    }
-
-}
-.section {
-    background-color: white;
-    box-shadow: 5px -5px 10px rgb(161, 159, 159);
-    display: block;
-    margin: auto;
-    margin-top: 11vh;
-    border-radius: 8%;
-    width: 87vw;
-    height: auto;
-   }
-
-.article{
     
-    display: flex;
-    align-items: center;
-    flex-direction: column;
 
-}
-
-.imgs {
-
-    margin-top: 3vh;
-    border-radius: 8%;
-    width: 70vw;
-}
-
-.prices{
-    font-size: 40px;
-    color: #F76C6C;
-    margin: 0;
-    justify-content: center;
-}
-
-aside.siandqt {
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 2vh;
-    
-}
-aside.siandqt div {
-    display: flex;
-    background-color: #F76C6C;
-    color: rgb(255, 255, 255);
-    border-radius: 20px;
-    padding:  0vh 5vw;
-    padding-left: 0%;
-    height: 5vh;
-}
-
-.action-button {
-    padding: 10px 40px;
-    float: left;
-    margin: auto;
-    border-radius: 20px;
-    font-family: 'Pacifico', cursive;
-    font-size: 25px;
-    color: #ffffff;
-    text-decoration: none;
-    background-color:#F76C6C;
-    border-bottom: 5px solid #F76C6C;;
-    text-shadow: 0px -2px #F76C6C;;
-    transition: all 0.1s;
-    -webkit-transition: all 0.1s;
-    height: 5vh;
-}
-.action-button:active {
-    transform: translate(0px,5px);
-    -webkit-transform: translate(0px,5px);
-    border-bottom: 1px solid;
-}
-.clothesize {
-    height: 5vh;
-    width: 8vw;
-
-}
-aside.siandqt p{
-    display: flex;
-    align-items: center;
 }

@@ -1,0 +1,148 @@
+main{
+    padding-bottom: 2vh;
+}
+
+article {
+    background-color: white;
+    box-shadow: 5px -5px 10px rgb(161, 159, 159);
+    display: block;
+    margin: auto;
+    margin-top: 11vh;
+    border-radius: 8%;
+    width: 80vw;
+    height: auto;
+    padding-bottom: 2vh;
+   }
+
+div.presentation{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+div.presentation img{
+    margin-top: 3vh;
+    border-radius: 8%;
+    width: 70vw;
+}
+
+div.presentation p{
+    font-size: 1.2rem;
+    color: #F76C6C;
+    margin: 0;
+    justify-content: center;
+}
+
+div.choice{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2vh 2vw;
+    
+}
+div.choice div {
+    display: flex;
+    background-color: #F76C6C;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding:  0vh 2vw;
+    height: 5vh;
+   
+}
+
+.addButton {
+    padding: 1vh 2vw;
+    margin: auto;
+    border-radius: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color:#F76C6C;
+    border: none;
+    text-shadow: 0px -2px #F76C6C;;
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+    height: 5vh;
+    font-size: 1.2rem;
+}
+.addButton:active {
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
+}
+
+
+div.choice p{
+    display: flex;
+    align-items: center;
+    padding: 1vh 1vw;
+    font-size: 1.1rem ;
+}
+div.choice select{
+    margin: 1vh 0;
+}
+
+article input {
+    display: block;
+}
+
+@media only screen and (min-width: 700px) {
+    .main{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 3vw;
+        margin-top: 2vh;
+        height: 55vh;
+        width: 40vh ;
+    }
+    aside.siandqt div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 30vh;
+        width: 9vw;
+    }
+    aside.siandqt{
+        display: flex;
+        flex-wrap: wrap;
+        width: 35vw;
+    }
+    section.section {
+        margin-left: 3vw;
+    }
+    .action-button {
+        padding: 10px 40px;
+        float: left;
+        margin: auto;
+        border-radius: 10px;
+        font-family: 'Pacifico', cursive;
+        font-size: 25px;
+        color: #ffffff;
+        text-decoration: none;
+        background-color:#F76C6C;
+        border-bottom: 5px solid #F76C6C;;
+        text-shadow: 0px -2px #F76C6C;;
+        transition: all 0.1s;
+        -webkit-transition: all 0.1s;
+    }
+    .action-button:active {
+        transform: translate(0px,5px);
+        -webkit-transform: translate(0px,5px);
+        border-bottom: 1px solid;
+    }
+    .imgs{
+        max-width: 80%;
+    }
+    .clothesize{
+        max-width: 5vh;
+        max-height: 5vh;
+        padding: 2px 5px;
+        
+
+    }
+    aside.siandqt p{
+        display: flex;
+        align-items: center;
+        padding-left: 1.5vw;
+    }
+}
