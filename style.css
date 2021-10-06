@@ -3,7 +3,11 @@
     box-sizing : border-box;
     max-width:100%
 }
-
+body {
+    min-height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
+}
 header {
     top:0;
     position: fixed;
@@ -33,6 +37,8 @@ div.menuBurger{
 }
 div.noBurger{
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 div.burger div{
     height: 5px;
@@ -51,8 +57,6 @@ div.categories li{
 div.categories li a{
     text-decoration: none;
     color: #000000;
-    
-    
 }
 div.categories{
     border-top: 20vh;
@@ -69,7 +73,7 @@ svg.crossIcon{
 
 nav.headerright{
     display: flex;
-    width: 20vw;;
+    width: 20vw;
     align-items: center;
 
 }
@@ -122,36 +126,24 @@ nav.headerright ul li{
 
 /*Main*/
 
-body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
-}
+
 
 main{
-    margin-top: 11vh;
-    width: 100vw;;
-}
-
-
-div.mainBackground{
+    margin-top: 19vh;
+    width: 100vw;
     background-color: #EBEBEB;
-    margin-top: 2vh;
-
-
 }
 
 
-article.valeurs{
+article.valeurs, article.meilleuresVentes{
     display: block;
     margin: auto;
     background-color: #ffffff ;
     width: 80vw;
     border-radius: 10px;
     text-align: center;
-    margin-top: 5vh;
     
 }
-
-
 
 .catchphrase {
     color: #194350;
@@ -160,26 +152,38 @@ article.valeurs{
     padding: 2vh;
 }
 
-article.valeurs h2{
+h1{
+    color: #F76C6C;
+    font-size: 1.6rem; 
+    font-weight: bold;
+    text-align: center; 
+    padding: 2vh 0; 
+
+}
+
+article.meilleuresVentes h2, article.valeurs h2{
     color: #F76C6C;
     font-size: 20px;
     text-align: center; 
     padding-top: 1rem;
+    font-weight: bold;
+
 }
 
 article.valeurs p {
    color: #000000;
-   font-size: 1rem;
-   padding: 1rem 2rem 1rem 2rem;
+   font-size: 1.2rem;
+   letter-spacing: normal;
+   padding: 2vh 4vw;
    text-align: inherit;
 }
-
-article.valeurs button a {
-    text-decoration: none;
-    color: #FFFFFF;
+article.valeurs div{
+    padding: 3vh 0; 
 }
 
-article.valeurs button{
+article.valeurs a {
+    text-decoration: none;
+    color: #FFFFFF;
     background-color: #39424E;
     padding: 1vh;
     border-radius: 10px;
@@ -188,34 +192,32 @@ article.valeurs button{
 }
 
 article.meilleuresVentes{
-    height: 30vh;
-    margin-top: 10vh;
+    margin: 10vh auto;
+    padding-bottom: 2vh;
 }
 
 
 div.slider{
     display: flex;
     overflow: hidden;
-    background-color: #EBEBEB;
-    margin: 0 12.5vw;
-
+    background-color: #39424E;
+    border-radius: 20px;
+    padding: 2vh 2vw;
+    width: 61vw;
+    margin: 2vh auto;
 }
-img.slide{
-    margin:2.5vw;
-    width: 20vw;
-    border-radius: 5px;
+div.slider img{
+  width: 15vw;
+  margin: 2vw;
 }
 
 /*Footer*/
 
 footer {
-
     background-color: #39424E;
     width: 100vw;
-    height: 15vh;
     display: flex;
     justify-content: space-between;
-
 }
 
 footer ul {
@@ -232,7 +234,6 @@ footer li a {
     font-size: 0.9rem; 
     
     line-height: 1.2rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 footer li a:hover {
@@ -240,7 +241,7 @@ footer li a:hover {
 }
 
 .list {
-    width: 50vw;
+    width: 40vw;
     padding-top: 1vh;
     margin-left: 6vw;
 }
@@ -271,7 +272,6 @@ footer li a:hover {
 }
 
 .containernetworks p {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     font-size: 0.8rem;
 }
@@ -279,7 +279,7 @@ footer li a:hover {
 
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
     header{
         height: 13vh;
     }
@@ -307,8 +307,6 @@ footer li a:hover {
     div.burger{
         display: none;
     }
-
-  
     nav.headerright{
         position:absolute;
         top:0;
@@ -317,8 +315,6 @@ footer li a:hover {
         width: 10vw;
         padding-right: 2vw;
         margin-left: 80vw;;
-      
-
     }
     nav.headerright ul {
         display: flex;
@@ -332,7 +328,7 @@ footer li a:hover {
     div.menuBurger{
         display: flex;
         background: none;
-        width: 60vw;
+        width: 50vw;
         height: 10vh;
         z-index: 1;
         margin-left: 15vw;
@@ -352,7 +348,7 @@ footer li a:hover {
         display:flex;
         align-items: center;
         font-size: 1rem;
-        width: 60vw;
+        width: 50vw;
         height: 9vh;
         padding: 0;
         
@@ -364,13 +360,11 @@ footer li a:hover {
     }
     div.categories li a{
         color:white;
-        font-weight: bold;
+        font-size: 1.2rem;
     }
     div.categories li a:hover {
-        color:#39424E;
+        font-weight: bold;
     }
-    
-
     .searchbar {
         width: 20vw;
         position: absolute;
@@ -409,65 +403,15 @@ footer li a:hover {
         margin-left: 2vw;
         justify-content: center;
     }
-
     .containernetworks p {
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-weight: bold;
         font-size: 1rem;
-        
     }
     div.lines{
         display: flex;
         justify-content: center;
         align-items: center; 
-        height: 12vh;
+        height: 10.5vh;
         padding-top: 1vh ;
-
     }
-}
-.section {
-    box-shadow: 5px -5px 10px rgb(161, 159, 159);
-    display: block;
-    margin: auto;
-    margin-top: 11vh;
-    border-radius: 8%;
-    width: 87vw;
-    height: auto;
-   }
-
-.article{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    
-}
-
-.imgs {
-    margin-top: 3vh;
-    border-radius: 8%;
-    width: 70vw;
-}
-
-.prices{
-    font-size: 40px;
-    color: #F76C6C;
-    margin: 0;
-    justify-content: center;
-}
-
-aside.siandqt {
-    font-size: 20px;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 2vh;
-    
-}
-aside.siandqt div {
-    display: flex;
-    background-color: #F76C6C;
-    color: rgb(255, 255, 255);
-    border-radius: 20px;
-    padding:  0vh 9vw;
-    padding-left: 0%;
 }

@@ -1,0 +1,121 @@
+main{
+    padding-bottom: 2vh;
+}
+h1{
+    color: #F76C6C;
+    font-size: 20px;
+    text-align: center; 
+    padding-top: 1rem;
+}
+article h2{
+    color: #F76C6C;
+    font-size: 20px;
+    text-align: center; 
+    padding-top: 1rem;
+}
+article {
+    background-color: white;
+    box-shadow: 5px -5px 10px rgb(161, 159, 159);
+    display: block;
+    margin: auto;
+    margin-top: 11vh;
+    border-radius: 8%;
+    width: 80vw;
+    height: auto;
+    padding-bottom: 2vh;
+   }
+
+div.presentation{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+div.presentation img{
+    margin-top: 3vh;
+    border-radius: 8%;
+    width: 70vw;
+}
+
+div.presentation p{
+    font-size: 1.2rem;
+    color: #F76C6C;
+    margin: 0;
+    justify-content: center;
+}
+
+div.choice{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2vh 2vw;
+    
+}
+select.sizeQuantity {
+    display: flex;
+    background-color: #F76C6C;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding:  0vh 2vw;
+    height: 5vh;
+    border: none;   
+}
+
+.addButton {
+    padding: 1vh 2vw;
+    margin: auto;
+    border-radius: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color:#F76C6C;
+    border: none;
+    text-shadow: 0px -2px #F76C6C;;
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+    height: 5vh;
+    font-size: 1.2rem;
+}
+.addButton:active {
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
+}
+
+
+div.choice p{
+    display: flex;
+    align-items: center;
+    padding: 1vh 1vw;
+    font-size: 1.1rem ;
+}
+div.choice select{
+    margin: 1vh 0;
+}
+
+article input {
+    display: block;
+}
+
+@media only screen and (min-width: 700px) {
+    
+    div.articles{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 4vh 1vw;
+    }
+    article{
+        width: 30vw;
+        margin: auto;
+    }
+    div.presentation img{
+        width: 80%;
+    }
+    div.choice div {
+        padding:  0vh 0.5vw;
+    }
+    div.choice p{
+        padding: 1vh 0.5vw;
+    }
+
+}
