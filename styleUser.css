@@ -9,6 +9,7 @@ div.user {
     display: flex;
     justify-content: center;
     padding-top: 50vw;
+    z-index: 1;
 }
 
 .circle {
