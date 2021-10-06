@@ -1,7 +1,12 @@
 main{
     padding-bottom: 2vh;
 }
-
+h1{
+    color: #F76C6C;
+    font-size: 20px;
+    text-align: center; 
+    padding-top: 1rem;
+}
 article h2{
     color: #F76C6C;
     font-size: 20px;
@@ -47,14 +52,14 @@ div.choice{
     padding: 2vh 2vw;
     
 }
-div.choice div {
+select.sizeQuantity {
     display: flex;
     background-color: #F76C6C;
     color: rgb(255, 255, 255);
     border-radius: 20px;
     padding:  0vh 2vw;
     height: 5vh;
-   
+    border: none;   
 }
 
 .addButton {
