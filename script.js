@@ -6,7 +6,7 @@ burger.addEventListener("click",function(){
 const crossIcon = document.querySelector("svg.crossIcon");
 crossIcon.addEventListener("click",function(){
     menu.style.display = "none";
-    burger.style.display = ""
+    burger.style.display = "";
 })
 
 let slider = document.querySelector(".slider");

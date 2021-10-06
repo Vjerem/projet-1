@@ -207,13 +207,10 @@ img.slide{
 /*Footer*/
 
 footer {
-
     background-color: #39424E;
     width: 100vw;
     display: flex;
     justify-content: space-between;
-
-
 }
 
 footer ul {
@@ -238,7 +235,7 @@ footer li a:hover {
 }
 
 .list {
-    width: 50vw;
+    width: 40vw;
     padding-top: 1vh;
     margin-left: 6vw;
 }
@@ -416,7 +413,7 @@ footer li a:hover {
         display: flex;
         justify-content: center;
         align-items: center; 
-        height: 12vh;
+        height: 10.5vh;
         padding-top: 1vh ;
 
     }
