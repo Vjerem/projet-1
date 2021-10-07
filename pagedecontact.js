@@ -6,9 +6,7 @@ let form = document.querySelector("form");
 let span = document.querySelector(".close");
 
 // quand l'utilisateur clique sur le bouton, le pop up s'ouvre 
-// btn.addEventListener("click",function(){
-//   modal.style.display = "block";
-// })
+
 form.addEventListener("submit", function (evt){
   evt.preventDefault()
   modal.style.display = "block";
