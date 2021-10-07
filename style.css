@@ -57,8 +57,6 @@ div.categories li{
 div.categories li a{
     text-decoration: none;
     color: #000000;
-    
-    
 }
 div.categories{
     border-top: 20vh;
@@ -195,22 +193,22 @@ article.valeurs a {
 
 article.meilleuresVentes{
     margin: 10vh auto;
+    padding-bottom: 2vh;
 }
 
 
 div.slider{
     display: flex;
     overflow: hidden;
-    background-color: #EBEBEB;
-    margin: 2vh 12.5vw;
-    
-
+    background-color: #39424E;
+    border-radius: 20px;
+    padding: 2vh 2vw;
+    width: 61vw;
+    margin: 2vh auto;
 }
-img.slide{
-    margin:2.5vw;
-    width: 20vw;
-    height: auto;
-    border-radius: 5px;
+div.slider img{
+  width: 15vw;
+  margin: 2vw;
 }
 
 /*Footer*/
@@ -309,8 +307,6 @@ footer li a:hover {
     div.burger{
         display: none;
     }
-
-  
     nav.headerright{
         position:absolute;
         top:0;
@@ -319,8 +315,6 @@ footer li a:hover {
         width: 10vw;
         padding-right: 2vw;
         margin-left: 80vw;;
-      
-
     }
     nav.headerright ul {
         display: flex;
@@ -366,13 +360,11 @@ footer li a:hover {
     }
     div.categories li a{
         color:white;
-        font-weight: bold;
+        font-size: 1.2rem;
     }
     div.categories li a:hover {
-        color:#39424E;
+        font-weight: bold;
     }
-    
-
     .searchbar {
         width: 20vw;
         position: absolute;
@@ -411,11 +403,9 @@ footer li a:hover {
         margin-left: 2vw;
         justify-content: center;
     }
-
     .containernetworks p {
         font-weight: bold;
         font-size: 1rem;
-        
     }
     div.lines{
         display: flex;
@@ -423,8 +413,5 @@ footer li a:hover {
         align-items: center; 
         height: 10.5vh;
         padding-top: 1vh ;
-
     }
-    
-
 }
