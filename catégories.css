@@ -1,5 +1,6 @@
 main{
     padding-bottom: 2vh;
+    flex-wrap: wrap;
 }
 h1{
     color: #F76C6C;
