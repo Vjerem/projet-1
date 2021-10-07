@@ -1,18 +1,22 @@
 
-let modal = document.getElementById("myModal");
+let modal = document.querySelector("#myModal");
 
-let btn = document.getElementById("myBtn");
+let form = document.querySelector("form");
 
-let span = document.getElementsByClassName("close")[0];
+let span = document.querySelector(".close");
 
-btn.onclick = function() {
+// quand l'utilisateur clique sur le bouton, le pop up s'ouvre 
+// btn.addEventListener("click",function(){
+//   modal.style.display = "block";
+// })
+form.addEventListener("submit", function (evt){
+  evt.preventDefault()
   modal.style.display = "block";
-}
+})
 
-span.onclick = function() {
-  modal.style.display = "none";
-}
+//preventDefault annule la fonction de base d'un élement
 
+<<<<<<< HEAD
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
@@ -151,3 +155,9 @@ function MagnifyingGlass(id, zoom, size){
   
   
 };
+=======
+// quand l'utilisation clique sur la croix, la fenetre se ferme
+span.addEventListener("click",function(){
+  modal.style.display = "none";
+})
+>>>>>>> 4653ec1db3d05d152cdbf58b400fcccd0d2604fc
