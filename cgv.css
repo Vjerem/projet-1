@@ -1,0 +1,69 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    background-color: #EBEBEB;
+}
+h1 {
+    color: rgb(247, 108,108);
+    padding-top: 2vh;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+div.cgv {
+    border-radius: 20px;
+    width: 80vw;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding: 3vh;  
+    background-color: white;
+    text-align: justify;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+h2 {
+    color:rgb(247, 108,108)
+}
+p {
+    margin-bottom: 1vh;
+    color: #39424E;
+}
+
+@media screen and (max-width: 700px) { 
+    
+    body {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+        background-color: #EBEBEB;
+    }
+    
+    
+    h1 {
+        color: rgb(247, 108,108);
+        vertical-align: middle;
+        font-weight: bold;
+        line-height: 10vh;
+    }
+    
+    div.cgv {
+    
+        border-radius: 2px;
+        border-radius: 20px;
+        width: 80vw;
+        height: auto;
+        display: block;
+        margin: auto;
+        padding: 3vh;  
+        background-color: white;
+        text-align: justify;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+    
+    h2 {
+        color:rgb(247, 108,108)
+    }
+    
+    p {
+        margin-bottom: 1vh;
+    }
+}

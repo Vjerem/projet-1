@@ -156,9 +156,10 @@ article.valeurs, article.meilleuresVentes{
 
 h1{
     color: #F76C6C;
-    font-size: 2rem !important;
+    font-size: 1.6rem; 
+    font-weight: bold;
     text-align: center; 
-    padding: 2vh 0 !important;
+    padding: 2vh 0; 
 
 }
 
@@ -167,6 +168,8 @@ article.meilleuresVentes h2, article.valeurs h2{
     font-size: 20px;
     text-align: center; 
     padding-top: 1rem;
+    font-weight: bold;
+
 }
 
 article.valeurs p {
@@ -213,13 +216,10 @@ img.slide{
 /*Footer*/
 
 footer {
-
     background-color: #39424E;
     width: 100vw;
     display: flex;
     justify-content: space-between;
-
-
 }
 
 footer ul {
@@ -243,7 +243,7 @@ footer li a:hover {
 }
 
 .list {
-    width: 50vw;
+    width: 40vw;
     padding-top: 1vh;
     margin-left: 6vw;
 }
@@ -421,7 +421,7 @@ footer li a:hover {
         display: flex;
         justify-content: center;
         align-items: center; 
-        height: 12vh;
+        height: 10.5vh;
         padding-top: 1vh ;
 
     }

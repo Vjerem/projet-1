@@ -1,13 +1,14 @@
 main{
     padding-bottom: 2vh;
+    flex-wrap: wrap;
 }
-h1{
+
+article h2{
     color: #F76C6C;
     font-size: 20px;
     text-align: center; 
     padding-top: 1rem;
 }
-
 article {
     background-color: white;
     box-shadow: 5px -5px 10px rgb(161, 159, 159);
@@ -93,62 +94,24 @@ article input {
 }
 
 @media only screen and (min-width: 700px) {
-    .main{
-        display: flex;
-        justify-content: space-between;
-        margin-left: 3vw;
-        margin-top: 2vh;
-        height: 55vh;
-        width: 40vh ;
+    
+    div.articles{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 4vh 1vw;
     }
-    aside.siandqt div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 30vh;
-        width: 9vw;
-    }
-    aside.siandqt{
-        display: flex;
-        flex-wrap: wrap;
-        width: 35vw;
-    }
-    section.section {
-        margin-left: 3vw;
-    }
-    .action-button {
-        padding: 10px 40px;
-        float: left;
+    article{
+        width: 30vw;
         margin: auto;
-        border-radius: 10px;
-        font-family: 'Pacifico', cursive;
-        font-size: 25px;
-        color: #ffffff;
-        text-decoration: none;
-        background-color:#F76C6C;
-        border-bottom: 5px solid #F76C6C;;
-        text-shadow: 0px -2px #F76C6C;;
-        transition: all 0.1s;
-        -webkit-transition: all 0.1s;
     }
-    .action-button:active {
-        transform: translate(0px,5px);
-        -webkit-transform: translate(0px,5px);
-        border-bottom: 1px solid;
+    div.presentation img{
+        width: 80%;
     }
-    .imgs{
-        max-width: 80%;
+    div.choice div {
+        padding:  0vh 0.5vw;
     }
-    .clothesize{
-        max-width: 5vh;
-        max-height: 5vh;
-        padding: 2px 5px;
-        
+    div.choice p{
+        padding: 1vh 0.5vw;
+    }
 
-    }
-    aside.siandqt p{
-        display: flex;
-        align-items: center;
-        padding-left: 1.5vw;
-    }
 }

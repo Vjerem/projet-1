@@ -25,8 +25,6 @@ article.teamcards div img {
     margin: auto;
     margin-top: 2vh;
     margin-bottom: 2vh;
-    height: 25vh;
-    aspect-ratio: 1/1;
     border-radius: 3px;
 }
 
@@ -63,7 +61,6 @@ section.flexbox {
 }
 
 article.teamcards {
-    background-color: #FFFFFF;
     width: 25vw;
     aspect-ratio: 3/4;
     margin-top: 8vh;
@@ -71,43 +68,15 @@ article.teamcards {
     margin-left: 2vw;
     padding: 2vh;
     font-size: 2rem;
-    text-align: center;
-    border-radius: 10px;
 }
 
 article.teamcards div img {
-    display: block;
-    margin: auto;
-    margin-top: 2vh;
     margin-bottom: 4vh;
 }
 
-article.teamcards img {
-    height: 35vh;
-    aspect-ratio: 1/1;
-    border-radius: 3px;
-}
 
 section.teampres {
-    width: 85vw;
-    margin: auto;
     margin-top: 8vh;
     margin-bottom: 5vh;
     padding: 3vh;
-    text-align: center;
-    background-color: #FFFFFF;
-    border-radius: 10px;
-}
-
-section.teampres h2 {
-    color: #F76C6C;
-    font-size: 2rem;
-}
-
-section.teampres p {
-    text-align: center;
-    color: #194350;
-    font-size: 1.5rem;
-    padding: 2vh;
-}
 }
