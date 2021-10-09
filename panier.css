@@ -1,0 +1,126 @@
+
+
+div.articles {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    border-radius: 20px;
+    width: 80vw;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding: 3vh;  
+    background-color: white;
+    margin-bottom: 2vh;
+
+}
+
+div.command p {
+    
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(247, 108,108);
+    text-align:center;
+    
+}
+div.command{
+    margin: 5vh auto;
+}
+
+div.command img {
+    max-width: 100%; 
+    border-radius: 20px;
+    width: 80vw;   
+}
+
+div.total {
+    border-radius: 20px;
+    width: 80vw;
+    height: auto;
+    margin: auto;
+    margin-top: 2vh;
+    padding: 3vh;  
+    background-color: white;
+    font-weight: bold;
+}
+
+.text {
+    display: flex;
+    justify-content: space-around;
+    margin: 2vh;
+}
+
+body {
+    margin:0vh;
+    background-color: #EBEBEB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.myBtn:hover {
+    background-color:#F76C6C;
+}
+
+
+.myBtn {
+
+        height: 5vh;
+        border-radius: 10px;
+        text-align: center;
+        text-decoration: none;
+        border: none;
+        color: white;
+
+        background-color: #194350;
+        font-weight: bolder;
+        display: block;
+        align-content: center;
+        margin:auto;
+        margin-top: 2vh;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 700px) {
+    div.articles{
+      width: 60vw; 
+      margin-left: 2vw;;
+    }
+    div.total{
+        width: 40vh;
+        right: 0;
+    }
+    div.command{
+        display: flex;
+    }
+    
+    div.command img{
+        width: 8vw;
+    }
+    div.notebook {
+        display:flex;
+        flex-direction: row;
+        margin-top: 2vh;
+    }
+    div.tShirt {
+        display:flex;
+        flex-direction: row;
+        margin-top: 2vh;
+    }
+
+    div.notebook p, div.tShirt p{
+        padding-right: 2vh;
+
+    }
+    div.text{
+        margin-left: 5vw;
+    }
+
+
+
+}
