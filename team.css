@@ -53,7 +53,7 @@ section.teampres p {
 
 @media only screen and (min-width: 600px) { 
 
-section.flexbox {
+div.flexbox {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;

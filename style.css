@@ -132,6 +132,7 @@ main{
     margin-top: 19vh;
     width: 100vw;
     background-color: #EBEBEB;
+    min-height: 100vh;
 }
 
 
@@ -207,7 +208,7 @@ div.slider{
     margin: 2vh auto;
 }
 div.slider img{
-  width: 15vw;
+  width: 53vw;
   margin: 2vw;
 }
 
@@ -413,5 +414,11 @@ footer li a:hover {
         align-items: center; 
         height: 10.5vh;
         padding-top: 1vh ;
+        
+    }
+
+    div.slider img{
+      width: 15vw;
+
     }
 }

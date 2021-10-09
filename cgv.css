@@ -1,7 +1,12 @@
 body {
-    font-family: 'Raleway', sans-serif;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
     background-color: #EBEBEB;
 }
+
+
+
+
 h1 {
     color: rgb(247, 108,108);
     padding-top: 2vh;
@@ -9,7 +14,9 @@ h1 {
     font-weight: bold;
     text-align: center;
 }
+
 div.cgv {
+
     border-radius: 20px;
     width: 80vw;
     height: auto;
@@ -21,18 +28,20 @@ div.cgv {
     margin-top: 2vh;
     margin-bottom: 2vh;
 }
+
 h2 {
     color:rgb(247, 108,108)
 }
+
 p {
     margin-bottom: 1vh;
-    color: #39424E;
 }
 
 @media screen and (max-width: 700px) { 
     
     body {
-        font-family: 'Raleway', sans-serif ;
+
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
         background-color: #EBEBEB;
     }
     
@@ -66,4 +75,6 @@ p {
     p {
         margin-bottom: 1vh;
     }
-}
+
+    }
+
